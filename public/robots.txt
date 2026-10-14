@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# 【要確認】公開ドメインが決まったら Sitemap: を追加する

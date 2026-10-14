@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ロゴ書体。ロゴ画像/書体が決まったらここだけ差し替える */
+  --font-logo: 'Playfair Display';
+}
+
+@layer components {
+  .hero-fade {
+    animation: hero-fade 0.8s ease-out both;
+  }
+  @keyframes hero-fade {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* 固定ヘッダーの高さ+余白（スマホ: 106px / タブレット〜1279px: 122px / 1280px以上: 80px） */
+    scroll-padding-top: 112px;
+  }
+  body {
+    @apply bg-base font-sans text-body text-ink;
+  }
+  :focus-visible {
+    outline: 3px solid #0f4c5c;
+    outline-offset: 3px;
+  }
+  .on-dark :focus-visible {
+    outline-color: #f2b84b;
+  }
+  @media (min-width: 768px) {
+    html {
+      scroll-padding-top: 128px;
+    }
+  }
+  @media (min-width: 1280px) {
+    html {
+      scroll-padding-top: 88px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

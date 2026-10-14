@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>ヘブンズカフェ｜名護湾徒歩1分の手ごねトルティーヤ・ブリトー</title>
+    <meta
+      name="description"
+      content="沖縄県名護市、名護湾まで徒歩1分のクラフトブリトーカフェ＆ダイナー。自家製手ごねトルティーヤのブリトーのほか、タコス、タコライス、ナチョスをテイクアウトでも。営業時間は日によって変わるためInstagramでご確認ください（木曜定休）。15席、駐車場なし、現金・クレジットカード可。電話0980-59-4358。"
+    />
+    <meta name="theme-color" content="#B5502F" />
+    <link rel="preload" as="image" href="/images/hero-nago-bay.jpg" fetchpriority="high" />
+
+    <!-- OGP。【要確認】公開ドメインが決まったら og:url / og:image(絶対URL) / canonical を追加する -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="ヘブンズカフェ" />
+    <meta property="og:title" content="ヘブンズカフェ｜名護のクラフトブリトーカフェ＆ダイナー" />
+    <meta
+      property="og:description"
+      content="手ごねトルティーヤのブリトーを、名護湾の海辺へ。ランチ、サンセットのテイクアウト、夜のクラフトダイナーまで。"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- 構造化データ。営業時間は日によって変動するため入れていない。価格帯は src/data/menu.ts と同じ内容に保つ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "ヘブンズカフェ",
+        "alternateName": "Heavens CAFE & BAR",
+        "servesCuisine": "Mexican",
+        "telephone": "+81-980-59-4358",
+        "paymentAccepted": "Cash, Credit Card",
+        "priceRange": "¥600〜¥1,400",
+        "address": {
+          "@type": "PostalAddress",
+          "postalCode": "905-0021",
+          "addressCountry": "JP",
+          "addressRegion": "沖縄県",
+          "addressLocality": "名護市",
+          "streetAddress": "東江5丁目8-20 宮城ビル101号"
+        },
+        "sameAs": ["https://www.instagram.com/heavens_7535/"]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
