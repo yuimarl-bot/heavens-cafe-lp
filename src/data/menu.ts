@@ -16,7 +16,7 @@ export type MenuItem = {
   imageSrc?: string // 未配置・未指定ならプレースホルダー（幅1200px）
   imageSrcSmall?: string // 幅800px版。あれば srcset で出し分ける
   imageAlt?: string
-  // 'ai' の画像には「※イメージ画像（AI生成）」を表示する。実物の写真なら 'photo'
+  // 'ai' の画像には「※イメージ画像」を表示する。実物の写真なら 'photo'
   imageKind?: 'photo' | 'ai'
 }
 
@@ -37,7 +37,7 @@ export const menuItems: MenuItem[] = [
     imageSrc: '/images/craft-burrito.jpg',
     imageSrcSmall: '/images/craft-burrito-800.jpg',
     imageAlt: '手ごねトルティーヤで包み、半分に切ったブリトー',
-    imageKind: 'ai',
+    imageKind: 'photo',
   },
   {
     id: 'sig-02',
@@ -83,7 +83,7 @@ export const menuItems: MenuItem[] = [
     imageSrc: '/images/menu-drinks.jpg',
     imageSrcSmall: '/images/menu-drinks-800.jpg',
     imageAlt: '冷えたビールとテキーラが並ぶテーブル',
-    imageKind: 'ai',
+    imageKind: 'photo',
   },
   {
     id: 'togo-01',
@@ -95,6 +95,6 @@ export const menuItems: MenuItem[] = [
     imageSrc: '/images/menu-togo.jpg',
     imageSrcSmall: '/images/menu-togo-800.jpg',
     imageAlt: 'ブリトー、ナチョス、ビールなど、単品を組み合わせたイメージ',
-    imageKind: 'ai',
+    imageKind: 'photo',
   },
 ]

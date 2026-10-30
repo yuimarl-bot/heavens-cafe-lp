@@ -47,7 +47,7 @@ export const craftCopy = {
   imageSrc: '/images/craft-burrito.jpg',
   imageSrcSmall: '/images/craft-burrito-800.jpg',
   imageAlt: '手ごねトルティーヤで包み、半分に切ったブリトー',
-  imageKind: 'ai' as 'ai' | 'photo', // 'ai' の間は「イメージ画像」のキャプションを表示する
+  imageKind: 'photo' as 'ai' | 'photo', // 'ai' の間は「イメージ画像」のキャプションを表示する
 }
 
 // 価格はブリトー・タコス・タコライスのみ確定（税込）。ナチョス・ドリンクは未確定。menu.ts と合わせて更新する
@@ -76,7 +76,7 @@ export const menuCopy = {
   },
   allergyNote: 'アレルギーをお持ちの方は、ご注文前にスタッフへお申し出ください。', // 【要確認】店の対応方針
   alcoholNote: 'お酒は20歳になってから。飲酒運転は法律で禁止されています。',
-  aiCaption: '※イメージ画像（AI生成）',
+  aiCaption: '※イメージ画像',
   cta: '電話でテイクアウトを注文する',
 }
 
@@ -130,7 +130,7 @@ export const footerCopy = {
   notices: [
     'お酒は20歳になってから。飲酒運転は法律で禁止されています。',
     'アレルギーをお持ちの方は、ご注文前にスタッフへお申し出ください。',
-    '本サイトの一部画像は、AIで生成したイメージです。実際の商品・店舗とは異なる場合があります。',
+    '「イメージ画像」と表記した写真は、実際の商品とは異なる場合があります。',
   ],
 }
 
