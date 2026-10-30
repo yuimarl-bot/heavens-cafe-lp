@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-# 【要確認】公開ドメインが決まったら Sitemap: を追加する
+# 【要確認】独自ドメインに切り替えたら、下の URL も書き換える
+Sitemap: https://heavens-cafe-lp.vercel.app/sitemap.xml
