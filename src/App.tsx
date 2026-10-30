@@ -5,6 +5,7 @@ import Access from './components/sections/Access'
 import Craft from './components/sections/Craft'
 import Hero from './components/sections/Hero'
 import Menu from './components/sections/Menu'
+import Scenes from './components/sections/Scenes'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <main id="main" tabIndex={-1} className="outline-none">
         <Hero />
         <Craft />
+        <Scenes />
         <Menu />
         <Access />
       </main>

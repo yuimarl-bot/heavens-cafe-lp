@@ -2,6 +2,7 @@
 export const headerCopy = {
   nav: [
     { label: 'Craft', href: '#craft' },
+    { label: '3 Scenes', href: '#scenes' },
     { label: 'Menu', href: '#menu' },
     { label: 'Access', href: '#access' },
   ],

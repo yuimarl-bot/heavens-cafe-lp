@@ -8,7 +8,7 @@ export default function Craft() {
   const [imageOk, setImageOk] = useState(true)
 
   return (
-    <section id="craft" className="bg-sand py-16 md:py-28">
+    <section id="craft" className="bg-base py-16 md:py-28">
       <div className="mx-auto grid max-w-container items-center gap-10 px-5 md:grid-cols-2 md:gap-16 md:px-8">
         <div className="relative md:order-first">
           {/* 背景のずらしブロック */}
