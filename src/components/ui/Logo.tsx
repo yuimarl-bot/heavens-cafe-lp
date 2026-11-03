@@ -20,7 +20,7 @@ export default function Logo({ tone = 'dark', className = '' }: Props) {
       className={`block shrink-0 ${className}`}
       aria-label={`${shop.name}（${shop.nameEn}） トップへ`}
     >
-      <img src={asset(sources[tone])} alt="" width={506} height={112} className="h-12 w-auto md:h-14" />
+      <img src={asset(sources[tone])} alt="" width={501} height={112} className="h-12 w-auto md:h-14" />
     </a>
   )
 }
