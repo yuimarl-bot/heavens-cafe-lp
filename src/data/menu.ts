@@ -20,7 +20,7 @@ export type MenuItem = {
   imageKind?: 'photo' | 'ai'
 }
 
-// 価格はオーナー確認済み（ブリトー・タコス・タコライス）。ナチョス・ドリンクは未確定。To-Go はセットではなく単品の組み合わせ
+// 価格はオーナー確認済み（ブリトー・タコス・タコライス・シェアナチョス）。ドリンクは未確定。To-Go はセットではなく単品の組み合わせ
 export const menuItems: MenuItem[] = [
   {
     id: 'sig-01',
@@ -56,7 +56,10 @@ export const menuItems: MenuItem[] = [
     category: 'signatures',
     name: 'タコライス',
     description: '沖縄ならではの一皿を、ヘブンズカフェ流に。',
-    prices: [{ price: 600 }],
+    prices: [
+      { label: '並', price: 600 },
+      { label: '大', price: 1000 },
+    ],
     pairing: '',
     imageSrc: '/images/menu-taco-rice.jpg',
     imageSrcSmall: '/images/menu-taco-rice-800.jpg',
@@ -66,12 +69,18 @@ export const menuItems: MenuItem[] = [
   {
     id: 'side-01',
     category: 'sides',
-    name: 'ナチョス',
-    description: '食感を楽しむ、シェアしやすいおつまみ。',
+    name: 'シェアナチョス',
+    description: '食感を楽しむ、シェアしやすいおつまみ。写真はフルトッピングです。',
+    prices: [
+      { label: '通常', price: 1000 },
+      { label: 'TOGO', price: 1200 },
+      { label: 'フルトッピング', price: 1400 },
+      { label: 'フルトッピング TOGO', price: 1600 },
+    ],
     pairing: '',
     imageSrc: '/images/menu-nachos.jpg',
     imageSrcSmall: '/images/menu-nachos-800.jpg',
-    imageAlt: 'チーズたっぷりのナチョス',
+    imageAlt: 'フルトッピングのシェアナチョス',
   },
   {
     id: 'side-02',
@@ -89,12 +98,12 @@ export const menuItems: MenuItem[] = [
     id: 'togo-01',
     category: 'togo',
     name: 'お好みの組み合わせで',
-    description: 'ブリトー、タコス、タコライス、ナチョスなど、単品を組み合わせてテイクアウトできます。',
+    description: 'ブリトー、タコス、タコライス、シェアナチョスなど、単品を組み合わせてテイクアウトできます。',
     priceNote: 'お代は、選んだ単品の価格になります。', // 【要確認】セット割引などがないか
     pairing: '',
     imageSrc: '/images/menu-togo.jpg',
     imageSrcSmall: '/images/menu-togo-800.jpg',
-    imageAlt: 'ブリトー、ナチョス、ビールなど、単品を組み合わせたイメージ',
+    imageAlt: 'ブリトー、シェアナチョス、ビールなど、単品を組み合わせたイメージ',
     imageKind: 'photo',
   },
 ]
